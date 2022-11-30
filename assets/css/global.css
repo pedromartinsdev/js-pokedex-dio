@@ -1,0 +1,111 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.content h1{
+    text-align: center;
+}
+
+#pokemonList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 1rem;
+}
+
+.pokemon{
+    border-radius: 16px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-container{
+    display: flex;
+    justify-content: center;
+}
+
+.number, .name{
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem 0 0;
+}
+
+.types{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.type{
+    display: flex;
+    justify-content: center;
+
+    border-radius: 8px;
+    min-width: 5rem;
+}
+
+.detail img{
+    margin: 1rem 0;
+    height: 12rem;
+    width: 12rem;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-top: 2rem;
+
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #007bff 0%, #007bff 100%);
+
+    width: 10rem;
+    height: 3rem;
+
+    border: none;
+
+    opacity: 1;
+    transition: 0.3s;
+}
+
+button:hover {opacity: 0.8}
+
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 62rem;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 16px;
+    }
+}
+
